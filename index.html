@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify</title>
+</head>
+<body>
+    <!-- corpo centrale -->
+    <main>
+        <!-- menù -->
+        <nav class="menù">
+            <div id="logo">
+               <img src="spotify/img/logo.svg" alt="logo">
+            </div>
+            <ul>
+                <li><a href="#"><img src="spotify/img/home.svg" alt="home">Home</a></li>
+                <li><a href="#"><img src="spotify/img/search.svg" alt="search">Cerca</a></li>
+                <li><a href="#"><img src="spotify/img/libreria.svg" alt="lib">La tua libreria</a></li>
+            </ul>
+            <ul id="playlist">
+                <strong>PLAYLIST</strong>
+                <li><a href="#"><i class="fa-solid fa-square-plus"></i>Crea Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+            </ul>
+            <div id="account">
+                <a href="#"><img src="spotify/img/download.svg" alt="download">Installa app</a>
+                <hr>
+                <div>
+                    <img src="spotify/img/profile.svg" alt="profile">John Doe
+                </div>
+            </div>
+        </nav>
+
+        <!-- call to action -->
+        <section class="upgrade">
+            <button>EFFETTUA L'UPGRADE</button>
+        </section>
+
+        <!-- tracks -->
+        <section class="tracks">
+
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div id="playing-track">
+            <div id="track-img">
+                <img src="spotify/img/sinister.jpeg" alt="sinister">
+            </div>
+            <div id="name">
+                <span>
+                    <strong>Sinister</strong>
+                </span>
+                <br>
+                <a href="#">Brano Nome</a>
+            </div>
+            <div id="interaction">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-regular fa-folder"></i></a>
+            </div>
+        </div>
+
+        <nav id="player">
+            <div id="controls">
+                <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+            </div>
+            <div id="progress-bar">
+                <span>0:25</span>
+                <div id="total-bar">
+                    <div id="progress">
+                    </div>
+                </div>
+                <span>4:35</span>
+            </div>
+        </nav>
+
+        <div id="source">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <a href="#"><i class="fa-solid fa-display"></i></a>
+            <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+            <div id="max-audio">
+                <div id="audio">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

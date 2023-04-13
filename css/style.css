@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #797474;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* main */
+main {
+    position: relative;
+}
+
+/* menù */
+.menù {
+    height: calc(100vh - 80px);
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #000000;
+    font-size: 12px;
+}
+
+#logo {
+    padding: 15px 15px 20px;
+}
+
+#logo img {
+    width: 150px;
+}
+
+.menù li {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.menù li:active {
+    border-left: 3px solid greenyellow;
+}
+
+.menù li a:hover {
+    color: #fff
+}
+
+.menù a img {
+    width: 20px;
+    vertical-align: text-top;
+    margin-right: 10px;
+}
+
+#playlist {
+    color: #fff;
+    padding: 25px 15px 0;
+    overflow-y: auto;
+}
+
+#playlist li {
+    margin-left: -15px;
+}
+
+#playlist i {
+    font-size: 35px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+#account {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    color: #797474;
+}
+
+#account a:hover {
+    color: #fff;
+}
+
+#account img {
+    width: 15px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#account div {
+    font-size: 16px;
+    color: #fff;
+}
+
+@media screen and (max-height:550px) {
+    #account {
+        display: none;
+    }
+}
+
+/* call to action */
+.upgrade {
+    width: calc(100% - 200px);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #080b12;
+    opacity: 50%;
+}
+
+.upgrade button {
+    color: #fff;
+    background-color: #080b12;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px 30px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.upgrade button:hover {
+    font-size: 1rem;
+}
+
+/* tracks */
+.tracks {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    overflow-y: auto;
+    background-color: #141922;
+    height: 800px;
+}
+
+/* footer */
+footer {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* playing-track */
+#playing-track {
+    display: flex;
+}
+
+#track-img {
+    padding-left: 10px;
+}
+
+#track-img img{
+    width: 50px;
+}
+
+#name {
+    color: #797474;
+    font-size: 12px;
+    padding-left: 10px;
+    align-self: center;
+}
+
+#name strong {
+    color: #fff;
+}
+
+#name a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#interaction {
+    align-self: center;
+    padding-left: 10px;
+}
+
+#interaction a:hover {
+    color: #fff;
+}
+
+.fa-folder {
+    padding-left: 3px;
+}
+
+/* player */
+#controls {
+    margin-left: 100px;
+}
+
+#player a {
+    color: #fff;
+    padding: 10px;
+}
+
+.fa-circle-play {
+    font-size: 25px;
+}
+
+.fa-circle-play:hover {
+    font-size: 35px;
+}
+
+#progress-bar span {
+    color: #fff;
+    font-size: 10px;
+    padding: 10px;
+}
+
+#total-bar {
+    display: inline-block;
+    width: 300px;
+    height: 5px;
+    background-color: #797474;
+    border-radius: 10px;
+}
+
+#progress {
+    width: 15%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* source */
+#source a{
+    color: #fff;
+    padding: 5px;
+}
+
+#max-audio {
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    background-color: #797474;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+
+#audio {
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* DEBUG */
+/* .menù {
+    background-color: blue;
+}
+
+.upgrade {
+    background-color: blueviolet;
+}
+
+.tracks {
+    background-color: aqua;
+    height: 800px;
+}
+
+footer {
+    background-color: sienna;
+} */
